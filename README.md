@@ -2,8 +2,8 @@
 
 ## Introduction
 
-A a React application that fetches and renders the list of dashboards available to a DHIS2 user.
-The app is hosted [here](https://dashboard-app-ruddy.vercel.app/), with the source code in github. The repo can be found [here](https://github.com/maritimdaniel/dashboard-app).
+A React application that fetches and renders the list of dashboards available to a DHIS2 user.
+The app is hosted [here](https://dashboard-app-ruddy.vercel.app/).
 
 ## Technology Stack
 
@@ -29,7 +29,7 @@ Should you want to install the application locally, follow these steps:
 1. Install Node.js and npm if you haven't already. You can download them from the official website: [Node.js download page](https://nodejs.org/en/download/) and [npm download page](https://www.npmjs.com/get-npm)
 
 2. Clone the repository using Git:
-   git clone <repository URL>.
+   [here](https://github.com/maritimdaniel/dashboard-app).
 
 3. Navigate to the cloned repository directory:
    cd <cloned repository directory>.
@@ -61,7 +61,6 @@ To run tests, run the following command
 ## Design Assumptions and Considerations
 
 - The application relies on a stable DHIS2 API endpoint for fetching dashboards.
-- Code quality takes precedence over implementing every feature.
 
 ## Potential Improvements
 
