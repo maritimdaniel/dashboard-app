@@ -1,0 +1,19 @@
+.errorContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.error {
+  text-align: center;
+}
+
+.error h2 {
+  color: rgb(227, 61, 61);
+}
+
+.error h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}

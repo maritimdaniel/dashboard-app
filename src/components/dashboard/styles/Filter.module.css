@@ -1,0 +1,32 @@
+.dashboardFilterContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboardFilterContainer h2 {
+  color: #4d4d4d;
+  font-size: 1.2rem;
+}
+
+.dashboardFilterForm {
+  display: flex;
+  align-items: center;
+  border: 1px solid #bcbcbc;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.dashboardFilterForm label {
+  margin-right: 0.625rem;
+  font-size: 0.85rem;
+  color: #818181;
+  font-weight: 500;
+}
+
+.dashboardFilterOptionswrapper {
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  background: none;
+}

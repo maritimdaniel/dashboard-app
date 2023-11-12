@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# Dashboard app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
 
-## Available Scripts
+A a React application that fetches and renders the list of dashboards available to a DHIS2 user.
+The app is hosted [here], with the source code in github. The repo can be found [here].
 
-In the project directory, you can run:
+## Technology Stack
 
-### `npm start`
+- React
+- JavaScript
+- CSS Module
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Key Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Collapsible Dashboard Cards: Users can expand and collapse dashboard cards to view their details.
+- Initial Dashboard Expansion: The first dashboard card is expanded by default upon application load.
+- Embedded Dashboard Items: Expanded dashboards display their corresponding items, providing a comprehensive overview.
+- Item Type Recognition: Icons are displayed alongside dashboard items based on their type (visualization, map, text).
+- Dashboard Starring: Users can star dashboards to keep them easily accessible across sessions.
+- Type-Based Filtering: A filter allows users to view only dashboard items of a specific type.
+- Persistent Filter Selection: The selected filter remains active when expanding or collapsing dashboard cards.
+- Performance Optimization: The application is designed to optimize performance and avoid unnecessary re-renders.
 
-### `npm test`
+## Local Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Should you want to install the application locally, follow these steps:
 
-### `npm run build`
+1. Install Node.js and npm if you haven't already. You can download them from the official website: [Node.js download page](https://nodejs.org/en/download/) and [npm download page](https://www.npmjs.com/get-npm)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Clone the repository using Git:
+   git clone <repository URL>.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Navigate to the cloned repository directory:
+   cd <cloned repository directory>.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Install the dependencies:
 
-### `npm run eject`
+```sh
+npm install ...
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. Start the development server:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```sh
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This will start a local development server and open the application in your browser. You can now make changes to the code and see them reflected in the browser without having to restart the server.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Notes
 
-## Learn More
+## Design Assumptions and Considerations
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- The application relies on a stable DHIS2 API endpoint for fetching dashboards.
+- Code quality takes precedence over implementing every feature.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Potential Improvements
 
-### Code Splitting
+- **Advanced Search Functionality:** Implement a more sophisticated search feature to enable users to locate specific dashboards or items based on various criteria.
+- **Customizable Dashboard Layouts:** Provide users with the ability to customize dashboard layouts, allowing them to arrange and organize dashboards according to their preferences.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Challenges
 
-### Analyzing the Bundle Size
+While developing this application, I encountered some challenges that prevented me from fully implementing certain features:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Dynamic Dashboard Switching: Successfully handling the dynamic expansion and collapse of dashboard cards proved to be a complex task. Despite my efforts, I was unable to fully implement this feature to ensure seamless focus on the chosen dashboard.
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Testing Coverage: Although I wrote unit tests for some components using Jest and React Testing Library, I was unable to complete testing for all components due to time constraints. Ensuring comprehensive testing for all components remains a priority for future development.

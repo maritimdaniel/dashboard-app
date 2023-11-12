@@ -1,0 +1,9 @@
+.dashboardItemcontent {
+  display: flex;
+  align-items: center;
+  padding: 0.3rem 0;
+}
+
+.dashboardItemcontent img {
+  margin: 0 0.75rem;
+}

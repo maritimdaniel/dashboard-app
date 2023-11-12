@@ -1,0 +1,38 @@
+.dashboardCardContainer {
+  background-color: white;
+  border: 2px solid #dddddd;
+  padding: 1.5rem;
+  border-radius: 5px;
+  margin-bottom: 0.75rem;
+}
+
+.dashboardCardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.dashboardCardHeader h2 {
+  font-size: 1.4rem;
+  color: #4d4d4d;
+}
+
+.dashboardCardIconsWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.dashboardCardIconsWrapper button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.starButton {
+  margin-right: 1.3rem;
+}
+
+.dashboardCardOpen {
+  border: 2px solid #4a91f4;
+}
