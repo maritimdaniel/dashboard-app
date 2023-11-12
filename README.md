@@ -3,7 +3,7 @@
 ## Introduction
 
 A a React application that fetches and renders the list of dashboards available to a DHIS2 user.
-The app is hosted [here], with the source code in github. The repo can be found [here].
+The app is hosted [here](https://dashboard-app-ruddy.vercel.app/), with the source code in github. The repo can be found [here](https://github.com/maritimdaniel/dashboard-app).
 
 ## Technology Stack
 
@@ -13,14 +13,14 @@ The app is hosted [here], with the source code in github. The repo can be found 
 
 ## Key Features
 
-- Collapsible Dashboard Cards: Users can expand and collapse dashboard cards to view their details.
-- Initial Dashboard Expansion: The first dashboard card is expanded by default upon application load.
-- Embedded Dashboard Items: Expanded dashboards display their corresponding items, providing a comprehensive overview.
-- Item Type Recognition: Icons are displayed alongside dashboard items based on their type (visualization, map, text).
-- Dashboard Starring: Users can star dashboards to keep them easily accessible across sessions.
-- Type-Based Filtering: A filter allows users to view only dashboard items of a specific type.
-- Persistent Filter Selection: The selected filter remains active when expanding or collapsing dashboard cards.
-- Performance Optimization: The application is designed to optimize performance and avoid unnecessary re-renders.
+- **Collapsible Dashboard Cards:** Users can expand and collapse dashboard cards to view their details.
+- **Initial Dashboard Expansion:** The first dashboard card is expanded by default upon application load.
+- **Embedded Dashboard Items:** Expanded dashboards display their corresponding items, providing a comprehensive overview.
+- **Item Type Recognition:** Icons are displayed alongside dashboard items based on their type (visualization, map, text).
+- **Dashboard Starring:** Users can star dashboards to keep them easily accessible across sessions.
+- **Type-Based Filtering:** A filter allows users to view only dashboard items of a specific type.
+- **Persistent Filter Selection:** The selected filter remains active when expanding or collapsing dashboard cards.
+- **Performance Optimization:** The application is designed to optimize performance and avoid unnecessary re-renders.
 
 ## Local Installation
 
@@ -37,7 +37,7 @@ Should you want to install the application locally, follow these steps:
 4. Install the dependencies:
 
 ```sh
-npm install ...
+npm install
 ```
 
 5. Start the development server:
@@ -47,6 +47,14 @@ npm start
 ```
 
 This will start a local development server and open the application in your browser. You can now make changes to the code and see them reflected in the browser without having to restart the server.
+
+## Running Tests
+
+To run tests, run the following command
+
+```bash
+  npm run test
+```
 
 ## Notes
 
@@ -64,6 +72,6 @@ This will start a local development server and open the application in your brow
 
 While developing this application, I encountered some challenges that prevented me from fully implementing certain features:
 
-- Dynamic Dashboard Switching: Successfully handling the dynamic expansion and collapse of dashboard cards proved to be a complex task. Despite my efforts, I was unable to fully implement this feature to ensure seamless focus on the chosen dashboard.
+- **Dynamic Dashboard Switching:** Successfully handling the dynamic expansion and collapse of dashboard cards proved to be a complex task. Despite my efforts, I was unable to fully implement this feature to ensure seamless focus on the chosen dashboard.
 
-- Testing Coverage: Although I wrote unit tests for some components using Jest and React Testing Library, I was unable to complete testing for all components due to time constraints. Ensuring comprehensive testing for all components remains a priority for future development.
+- **Testing Coverage:** Although I wrote unit tests for some components using Jest and React Testing Library, I was unable to complete testing for all components due to time constraints. Ensuring comprehensive testing for all components remains a priority for future development.
