@@ -18,7 +18,7 @@ const Filter = ({ onFilterChange }) => {
         <select
           className={classes.dashboardFilterOptionswrapper}
           name="dashboard items"
-          id="dashboardFilterOptionswrapper"
+          data-testid="dashboardFilterOptionswrapper"
           value={selectedFilter}
           onChange={handleFilterChange}
         >
