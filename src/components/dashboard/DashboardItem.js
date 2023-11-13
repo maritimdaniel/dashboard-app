@@ -9,6 +9,7 @@ import Line from "../common/Line";
 
 const DashboardItem = React.memo(({ item }) => {
   const itemType = item.type.toLowerCase();
+  console.log(itemType);
 
   const icon = () => {
     switch (itemType) {
@@ -50,11 +51,11 @@ const DashboardItem = React.memo(({ item }) => {
         <img
           className={classes.dashboardItemIcon}
           src={icon()}
-          alt="item icon"
+          alt={`${itemType} icon`}
         />
         <div className={classes.dashboardItemcontent}>{content()}</div>
       </div>
-      <Line />
+      <Line role="separator" />
     </div>
   );
 });

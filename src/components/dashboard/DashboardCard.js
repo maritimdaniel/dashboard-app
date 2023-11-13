@@ -98,7 +98,10 @@ const DashboardCard = React.memo(
     };
 
     return (
-      <div className={`${classes.dashboardCardContainer} `}>
+      <div
+        data-testid="dashboard"
+        className={`${classes.dashboardCardContainer} `}
+      >
         <div className={classes.dashboardCardHeader}>
           <h2>{dashboard.displayName}</h2>
           <div className={classes.dashboardCardIconsWrapper}>

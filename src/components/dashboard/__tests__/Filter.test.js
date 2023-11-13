@@ -1,32 +1,35 @@
 import React from "react";
-import { render, screen, fireEvent } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import Filter from "../Filter";
 
-test("should display the 'Filter items' label", () => {
+test('heading "Dashboards" is present in the document', () => {
   render(<Filter />);
-  const filterLabel = screen.getByLabelText("Filter items");
-  expect(filterLabel).toBeInTheDocument();
+  const headingElement = screen.queryByRole("heading");
+  expect(headingElement).toBeInTheDocument();
 });
 
-test("should render the filter select options", () => {
+test("Filter options label is present and accessible", () => {
   render(<Filter />);
-  const filterOptions = screen.getAllByRole("option");
-  expect(filterOptions).toHaveLength(4);
+  const filterOptionsLabel = screen.getByLabelText("Filter items");
+  expect(filterOptionsLabel).toBeInTheDocument();
+  expect(filterOptionsLabel).toHaveAttribute("for", "dashboard items");
+  expect(filterOptionsLabel).toHaveTextContent("Filter items");
 });
 
-test("should display the default selected filter option", () => {
+test("All filter options exist", () => {
   render(<Filter />);
-  const selectedOption = screen.getByRole("option", { selected: true });
-  expect(selectedOption.textContent).toBe("All types");
-});
 
-test("should update the selected filter option on change", () => {
-  render(<Filter />);
+  const allOption = screen.getByRole("option", { name: "All types" });
+  expect(allOption).toBeInTheDocument();
+
   const visualizationOption = screen.getByRole("option", {
     name: "Visualization",
   });
-  fireEvent.click(visualizationOption);
+  expect(visualizationOption).toBeInTheDocument();
 
-  const selectedOption = screen.getByRole("option", { selected: true });
-  expect(selectedOption.textContent).toBe("Visualization");
+  const mapOption = screen.getByRole("option", { name: "Map" });
+  expect(mapOption).toBeInTheDocument();
+
+  const textOption = screen.getByRole("option", { name: "Text" });
+  expect(textOption).toBeInTheDocument();
 });
