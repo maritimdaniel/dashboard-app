@@ -1,6 +1,6 @@
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
-import Filter from "./Filter";
+import Filter from "../Filter";
 
 test("should display the 'Filter items' label", () => {
   render(<Filter />);
